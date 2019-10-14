@@ -1,0 +1,27 @@
+{
+  "name": "trt_awsapi_proxy",
+  "description": "Environment",
+  "cookbook_versions": {},
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "trt_awsapi_proxy": {
+      "aws": {
+        "allowed_cidr_block": "10.0.0.0/16",
+        "stack_name": "dev-proxy-test"
+      },
+      "dns": {
+        "configure": false,
+        "proxy_fqdn": "proxy.example.com"
+      },
+      "logs": {
+        "cloudwatch_log_group": "dev-proxy-test"
+      },
+      "squid": {
+        "port": "3128"
+      }
+    }
+  }
+}
