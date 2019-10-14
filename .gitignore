@@ -1,0 +1,63 @@
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+pkg/
+
+# Berkshelf
+.vagrant
+/cookbooks
+Berksfile.lock
+
+# Bundler
+#Gemfile.lock
+#packages/*
+.bundle/*
+
+.kitchen
+.kitchen.local.yml
+
+# JetBrains template
+## Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+*.iml
+.idea
+/out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# Mac OS is the best
+.DS_Store
+.localized
+
+# Linux is the second best template
+.directory
+.Trash-*
+
+# Windows Sucks template
+# Windows Sucks image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Sucks Folder config file
+Desktop.ini
+
+# Windows Sucks Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+Dockerfile-kitchen*
+/test/data_bags/users/levon.json
+/templates/default/confd/*.erb
+*.tgz
+*.tar.gz
+/test/data_bags/bonusbits_awsapi_proxy/connections.json
+/temp/
+/test/data_bags/bonusbits_awsapi_proxy/credentials.json
+/test/data_bags/bonusbits_awsapi_proxy/sites.json
+/tmp/**
+/test/environments/bonusbits_awsapi_proxy_prd.json
+/test/environments/bonusbits_awsapi_proxy_dev.json
