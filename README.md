@@ -1,6 +1,4 @@
-# trt AWS API Proxy Chef Cookbook + CloudFormation
-[![CircleCI](https://circleci.com/gh/trt/trt_awsapi_proxy.svg?style=svg)](https://circleci.com/gh/trt/trt_awsapi_proxy)
-[![Coverage Status](https://coveralls.io/repos/github/trt/trt_awsapi_proxy/badge.svg?branch=master)](https://coveralls.io/github/trt/trt_awsapi_proxy?branch=master)
+# AWS API Proxy Chef Cookbook + CloudFormation
 
 # Purpose
 Deploy an EC2 Instance running Squid 3.5.11 Proxy server on public subnets.
@@ -17,8 +15,7 @@ DNS Script setup to update Route53 Internal DNS when new one spins up.
 1. AWS Service APIs (i.e. CFN Init, ECS, SNS, SES)
 2. AWS Linux Package Repos
 3. *.rubygems.org
-4. *.wordpress.org, *.wordpress.com (Wordpress Updates)
-5. docs.google.com (Temp) for Sheets access (Wordpress Plugin)
+4. docs.google.com (Temp) for Sheets access (Wordpress Plugin)
 
 # Launcher
 Click this button to open AWS CloudFormation web console to enter parameters and create the stack.<br>
@@ -26,7 +23,7 @@ Click this button to open AWS CloudFormation web console to enter parameters and
 
 
 # CloudFormation Template Details
-The [CloudFormation Template](https://github.com/trt/trt_awsapi_proxy/blob/master/aws/awsapi-access-proxy-template.yml) does the following:
+The [CloudFormation Template](https://github.com/trevenen/trt_awsapi_proxy/blob/master/aws/awsapi-access-proxy-template.yml) does the following:
 
 1. Create EC2 Instance using EBS volume
     1. t2.nano (default)
