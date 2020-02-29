@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf', '~> 5.2.0'
-gem 'rake', '~> 12.0.0'
+gem 'rake', '~> 12.3.3'
 
 group :style do
   gem 'chef', '12.17.44'
